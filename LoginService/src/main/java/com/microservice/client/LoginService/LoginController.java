@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.microservice.model.User;
 import com.microservice.service.LoginService;
-
+//test
 @RestController
 @RequestMapping("/user")
 public class LoginController {
