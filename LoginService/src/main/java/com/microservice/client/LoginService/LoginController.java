@@ -22,16 +22,16 @@ public class LoginController {
 	@Autowired
 	LoginService loginService;
 	
-	@Value("${world.message}")
+	/*@Value("${world.message}")
 	private String message;
-	
+	*/
 	@PostMapping
 	@RequestMapping("/login")
 	public String login(@RequestBody User user) {
 		
 		String flag=loginService.loginUser(user);
 		LOGGER.info("Login "+flag);
-		LOGGER.info("Config "+message);
+		LOGGER.info("Config ");
 		return flag;
 	}
 	
